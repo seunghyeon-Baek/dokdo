@@ -1,12 +1,28 @@
 import { Container, NavDropdown, Nav,Navbar} from 'react-bootstrap';
+import { useState } from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/css/style.css';
 
 function NavBar(){
-   
+    const [show, setShow] = useState(false);
+    const handleShow = () => {  setShow(true);}
+    const handleClose = () => { setShow(false);}
+
+    const navHover = () => {
+
+    }
+    
+    // onMouseEnter={handleShow} onMouseLeave={handleClose} show={show};
+     
+
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" id="Navbar"  variant="dark">
           <Container>
-            <Navbar.Brand href="#home">독도 전시관</Navbar.Brand>
+            <Navbar.Brand href="#home">
+            <img src='./img/flag.png'  width='40px' height='40px' style={{ marginRight: '10px' }}  alt='태극기' />
+              대한민국 | 독도 전시관
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />  
             <Navbar.Collapse id="basic-navbar-nav">  {/* 햄버거버튼 */}
               <Nav className="me-auto">
@@ -29,7 +45,6 @@ function NavBar(){
               <Nav>
                 <Nav.Link href="#deets">로그인</Nav.Link>
               </Nav>
-              
             </Navbar.Collapse>
           </Container>
         </Navbar>
