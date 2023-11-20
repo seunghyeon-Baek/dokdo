@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Button, Container, Row, Col, Navbar, Nav, NavDropdown, Card, Offcanvas } from 'react-bootstrap';
+import {Row, Col, Card, Container } from 'react-bootstrap';
 import vData from '../data.js'
 
 // Import Swiper styles
@@ -11,13 +11,13 @@ import 'swiper/css/pagination';
 // import required modules
 import { Pagination } from 'swiper/modules';
 
-function Center(){
-  const [myData,setMyData] = useState(vData)
-    return(
-        <>
-         <Swiper
-        slidesPerView={4}
-        spaceBetween={30}
+function Center() {
+  const [myData, setMyData] = useState(vData)
+  return (
+    <>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={40}
         centeredSlides={true}
         pagination={{
           clickable: true,
@@ -25,23 +25,60 @@ function Center(){
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide> 
-          <Row>
-            {
-              myData.map(function(item,i){
-                return <CardView product={myData[i]} />
-              })
-            }
-          </Row>
+        <SwiperSlide>
+          <Container className='mb-2 mb-md-5'>
+            <Row >
+              {
+                myData.map(function (item, i) {
+                  return <CardView product={myData[i]} />
+                })
+              }
+            </Row>
+          </Container>
         </SwiperSlide>
-        {/* <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide> */}
+        <SwiperSlide>
+        <Container className='mb-2 mb-md-5'>
+            <Row >
+              {
+                myData.map(function (item, i) {
+                  return <CardView product={myData[i]} />
+                })
+              }
+            </Row>
+          </Container>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Container className='mb-2 mb-md-5'>
+            <Row >
+              {
+                myData.map(function (item, i) {
+                  return <CardView product={myData[i]} />
+                })
+              }
+            </Row>
+          </Container>
+        </SwiperSlide>
       </Swiper>
-        </>
-    )
+    </>
+  );
 }
+function CardView({product}) {
+  return (
+    <>
+      <Col sm={9} md={3} className='mb-2'>
+        <Card className='card'>
+          <Card.Img variant="top" src={`./img/${product.img}`}/>
+          <Card.Body>
+            <Card.Title>{product.title}</Card.Title>
+            <Card.Text>
+              {product.content}
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </Col>
+    </>
+  )
+}
+
 
 export default Center;

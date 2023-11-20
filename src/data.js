@@ -2,27 +2,45 @@
 const vData = [
     {
         id:1,
-        title:"title1",
-        content:"content1",
-        img:"img-1.png"
+        title:"2023년 새롬고와 함께하는 독도",
+        content:"2023년 새롬고와 함께하는 독도특별전을 '만나고 싶은 우리 땅 독도'라는 제목으로...",
+        img:"poster1.jpg"
     },
     {
         id:2,
-        title:"title2",
-        content:"content2",
-        img:"img-2.png"
+        title:"독도의 날 기념 독도 홍보 영상",
+        content:"세종특별자치시교육청 독도전시관에서 2023년 독도의 날(10월 25일)을 기념하여 독도 홍보영상...",
+        img:"poster2.jpg"
     },
     {
         id:3,
-        title:"title3",
-        content:"content3",
-        img:"img-3.png"
+        title:"독도의 날 기념 독도 홍보 영상",
+        content:"세종특별자치시교육청 독도전시관에서 2023년 독도의 날(10월 25일)을 기념하여 독도 홍보영상...",
+        img:"poster2.jpg"
     },
     {
         id:4,
-        title:"title4",
-        content:"content4",
-        img:"img-4.png"
+        title:"독도전시관 독도생물 사진 전시회 개최",
+        content:"국립생물자원관 X 세종특별자치시교육청 전시회 관람을 원하시는 외부 방문객은 독도전시관 개관... ",
+        img:"poster4.jpg"
     }
+    // {
+    //     id:5,
+    //     title:"2023년 새롬고와 함께하는 독도",
+    //     content:"2023년 새롬고와 함께하는 독도특별전을 '만나고 싶은 우리 땅 독도'라는 제목으로...",
+    //     img:"poster1.jpg"
+    // },
+    // {
+    //     id:6,
+    //     title:"독도의 날 기념 독도 홍보 영상",
+    //     content:"세종특별자치시교육청 독도전시관에서 2023년 독도의 날(10월 25일)을 기념하여 독도 홍보영상...",
+    //     img:"poster2.jpg"
+    // },
+    // {
+    //     id:7,
+    //     title:"독도전시관 하반기 독도체험교실 안내",
+    //     content:"관내 유ㆍ초ㆍ중ㆍ고등학교 학급 및 동아리 대상으로 하반기 독도체험교실을 다음과 같이 실시합니다...",
+    //     img:"poster3.jpg"
+    // }
 ]
 export default vData;
