@@ -1,14 +1,28 @@
-// const vData = [
-//     {
-//         id:1,
-//         title:"독도 바로알기",
-//         content: "독도의 역사를 배우고, 자연을 체험하며 독도영토주권 수호 의지를 다질 수 있는 소중한 시간이 되기를 바랍니다.",
-//     },
-//     {
-//         id:2,
-//         title:"관람안내",
-//         content:"관람시간"
-//     }
-// ]
 
-// export default vData;
+const vData = [
+    {
+        id:1,
+        title:"title1",
+        content:"content1",
+        img:"img-1.png"
+    },
+    {
+        id:2,
+        title:"title2",
+        content:"content2",
+        img:"img-2.png"
+    },
+    {
+        id:3,
+        title:"title3",
+        content:"content3",
+        img:"img-3.png"
+    },
+    {
+        id:4,
+        title:"title4",
+        content:"content4",
+        img:"img-4.png"
+    }
+]
+export default vData;
