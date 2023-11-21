@@ -13,9 +13,6 @@ function NavBar(){
 
     }
     
-    // onMouseEnter={handleShow} onMouseLeave={handleClose} show={show};
-     
-
     return (
         <Navbar expand="lg" id="Navbar"  variant="dark">
           <Container>
@@ -43,7 +40,8 @@ function NavBar(){
                 </NavDropdown>
               </Nav>
               <Nav>
-                <Nav.Link href="#deets">로그인</Nav.Link>
+                <Nav.Link href="#">로그인</Nav.Link>
+                <Nav.Link href="#">회원가입</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

@@ -7,7 +7,7 @@
   z-index: 1000;
   border-bottom: 1px solid #f5f5f5ab;
   font-size: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 15px;
 }
 
@@ -71,35 +71,25 @@ body {
 .card {
   border-radius: 40px;
   border-style: none;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  transition: 0.3s;
-  padding: 35px;
+  padding: 20px;
   margin: 10px;
   height: 400px;
 }
 
-.card:hover{
-  transform: translate(-10px, -10px);
-  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-
 .cardViewFirst{
-  /* background-image: url(../../../public/img/bird.png); */
-  background-color:#9d979729;
-  background-size: cover;
+  background-image: url(../../../public/img/seal.png);
+  background-size: 60%;
+  background-position: right bottom;
+  background-color:#b1b1b129;
   background-repeat: no-repeat;
   width: 100%;
   height: 300px;
   font-weight: bold;
-  color: #000000;
+  color: #333;
 }
 
 .cardViewSec {
-  /* background-image: url(../../../public/img/dokdo3.jpg); */
   background-color: rgba(248, 248, 248, 0); 
-  /* background-size: cover;
-  background-repeat: no-repeat; */
   width: 100%;
   height: 300px;
   font-weight: bold;
@@ -117,6 +107,48 @@ body {
   overflow: hidden;
 }
 
+.cardPoster {
+  border-radius: 40px;
+  border-style: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  background-color: #d4aeae24;
+  padding: 30px;
+  margin: 10px;
+  height: 400px;
+}
+
+.cardPoster:hover{
+  transform: translate(-10px, -10px);
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* banner */
+.banWrap{
+    background-color: rgba(64, 86, 59, 0.511);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 40px;
+    height: 200px;
+}
+
+#bannertext{
+  padding: 2.5rem;
+  color : #eee;
+}
+#bannertext p{
+  margin-bottom: 0;
+}
+
+#bannertext h4{
+  font-weight :bold;
+  padding-bottom: 5px;
+}
+
+.line{  /* banner의 중간 선 */
+  border-right: 1px dotted #eee;
+}
 
 /* footer */
 .footer {
@@ -127,8 +159,6 @@ body {
   background-size: cover;
   background-position: center;
   color: #eee;
-
-  padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
 }
