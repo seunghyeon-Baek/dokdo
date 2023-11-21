@@ -31,7 +31,7 @@ function MainSwiper() {
           <Col sx={12} md={6} className='order-md-1 order-2 position-relative'>
             <SwiperSlide>
               <div className="image-container">
-                <img src='./img/dokdo1.jpg' alt='독도이미지' />
+                <img className='swiper-slide-img' src='./img/dokdo1.jpg' alt='독도이미지' />
                 <div className="text-overlay">
                   <h3>대한민국 독도</h3>
                   <p>독도에 대한 의미를 되새기는 특별한 공간, 독도의 삶과 역사를 잊지 않기 위해 독도전시관이 앞장서겠습니다.</p>
@@ -41,7 +41,7 @@ function MainSwiper() {
             </SwiperSlide>
             <SwiperSlide>
             <div className="image-container">
-                <img src='./img/dokdo2.jpg' alt='독도이미지' />
+                <img className='swiper-slide-img' src='./img/dokdo2.jpg' alt='독도이미지' />
                 <div className="text-overlay">
                   <h3>대한민국 독도</h3>
                   <p>독도전시관은 독도에 대한 올바른 이해와 영토 주권의식을 확산시키고자 마련된 공간입니다.</p>
