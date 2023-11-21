@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import Swiper from './components/Swiper';
 import CardView from './components/CardView';
 import Center from './components/Center';
+import Banner from './components/Banner';
 import Footer from './components/Footer';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
      <Swiper />
      <CardView />
      <Center />
+     <Banner />
      <Footer />
     </div>
   );

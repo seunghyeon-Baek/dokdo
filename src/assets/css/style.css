@@ -50,8 +50,10 @@ body {
 }
 
 .swiper-slide-img {
-  width: auto;
-  height: 100%;
+  /* 없어도되나 */
+  /* width: auto; */
+  /* width: 100%;
+  height: 100%; */
   background-size: cover;
 }
 
@@ -67,10 +69,13 @@ body {
 
 /* cardView */
 .card {
-  border-radius: 50px;
+  border-radius: 40px;
   border-style: none;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
+  padding: 35px;
+  margin: 10px;
+  height: 400px;
 }
 
 .card:hover{
@@ -78,17 +83,6 @@ body {
   box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
-
-.Card.Img{ 
-  /* margin-bottom: 40rem;
-  background: #e2e2e2 center bottom no-repeat;
-  min-height: 150rem; */
-  border-radius: 10rem;
-  background-size: 130rem;
-  background-position: 50% 50%;
-  height: 200rem;
-  overflow: hidden;
-  width: 100%;}
 
 .cardViewFirst{
   /* background-image: url(../../../public/img/bird.png); */
@@ -113,6 +107,15 @@ body {
 }
 
 /* center */
+.cardImg{
+  border-radius: 10px;
+}
+
+.poster{
+  width: 100%; 
+  vertical-align: top;
+  overflow: hidden;
+}
 
 
 /* footer */

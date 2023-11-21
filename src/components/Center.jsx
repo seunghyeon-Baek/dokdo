@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {Row, Col, Card, Container } from 'react-bootstrap';
+import { Row, Col, Card, Container } from 'react-bootstrap';
 import vData from '../data.js'
 
 // Import Swiper styles
@@ -37,7 +37,7 @@ function Center() {
           </Container>
         </SwiperSlide>
         <SwiperSlide>
-        <Container className='mb-2 mb-md-5'>
+          <Container className='mb-2 mb-md-5'>
             <Row >
               {
                 myData.map(function (item, i) {
@@ -48,7 +48,7 @@ function Center() {
           </Container>
         </SwiperSlide>
         <SwiperSlide>
-        <Container className='mb-2 mb-md-5'>
+          <Container className='mb-2 mb-md-5'>
             <Row >
               {
                 myData.map(function (item, i) {
@@ -62,12 +62,14 @@ function Center() {
     </>
   );
 }
-function CardView({product}) {
+function CardView({ product }) {
   return (
     <>
       <Col sm={9} md={3} className='mb-2'>
         <Card className='card'>
-          <Card.Img variant="top" src={`./img/${product.img}`}/>
+          <span className='poster'>
+            <Card.Img variant="top" src={`./img/${product.img}`} />
+          </span>
           <Card.Body>
             <Card.Title>{product.title}</Card.Title>
             <Card.Text>
