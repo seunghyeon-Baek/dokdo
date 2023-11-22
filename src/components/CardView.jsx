@@ -23,7 +23,6 @@ function CardView({ product }) {
                         <Card.Img variant="top"/>
                         <Card.Body className='p-5'>
                             <Card.Title>관람안내</Card.Title>
-                            {/* <BsFillCheckCircleFill /> */}
                             <Card.Text>
                                 <ul className='cardUl'>
                                     <li><p>관람시간 : 화요일 - 토요일  9:00 ~ 17:00 </p></li>

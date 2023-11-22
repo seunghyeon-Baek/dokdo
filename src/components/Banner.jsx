@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import icon1 from '../assets/img/icon_experience.svg';
 import icon2 from '../assets/img/icon_theater.svg';
 
+
 function Banner() {
     return (
         <div>

@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 } */
+
+/* font */
+@font-face {
+  font-family: "BMHANNAAir";
+  src: url("assets/font/BMHANNAAir.ttf");
+}
