@@ -1,5 +1,5 @@
 import { Button, Container, Row, Col, Card } from 'react-bootstrap';
-// import { BsFillCheckCircleFill } from "react-icons/bs";
+import { HiOutlineSpeakerphone } from "react-icons/hi";
 
 function CardView({ product }) {
     return (
@@ -9,7 +9,7 @@ function CardView({ product }) {
                     <Card className='card cardViewFirst'>
                         <Card.Img variant="top" />
                         <Card.Body className='p-5'>
-                            <Card.Title>독도 바로알기</Card.Title>
+                            <Card.Title className='cardTitle'>독도 바로알기</Card.Title>
                             <Card.Text>
                                 독도의 역사를 배우고, 자연을 체험하며 독도영토주권<br />
                                 수호 의지를 다질 수 있는 소중한 시간이 되기를 바랍니다.
@@ -22,9 +22,18 @@ function CardView({ product }) {
                     <Card className='card cardViewSec'>
                         <Card.Img variant="top"/>
                         <Card.Body className='p-5'>
-                            <Card.Title>관람안내</Card.Title>
+                                <Col>
+                                    <Card.Title className='cardTitle'>관람안내</Card.Title>
+                                </Col>
+                                <Col className='viewInfo'>
+                                    <ul className='cardUl'>
+                                        <li className='speakerIcon'><HiOutlineSpeakerphone /></li>
+                                        <li className='number'>044-999-6393</li>
+                                        <li><Button variant="outline-secondary">문의하기</Button></li>
+                                    </ul>
+                                </Col> 
                             <Card.Text>
-                                <ul className='cardUl'>
+                                <ul className=''>
                                     <li><p>관람시간 : 화요일 - 토요일  9:00 ~ 17:00 </p></li>
                                     <li><p>휴관안내 : 일요일, 월요일 및 공휴일 </p></li>
                                     <li><p>위치 : 경상북도 울릉군 울릉읍 독도 안용복길</p></li>

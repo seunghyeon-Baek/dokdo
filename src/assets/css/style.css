@@ -97,6 +97,50 @@ body {
   color: #000000;
 }
 
+.cardTitle{
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+/* .viewInfo{
+   display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+.cardUl {
+  list-style-type: none;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted  #333;
+  /* display: flex; */
+
+}
+
+.cardUl li {
+  display: inline;
+  margin-right:  20px;
+  /* list-style: none; */
+  /* text-align: center; */
+}
+
+.speakerIcon{
+  padding: 12px;
+  font-size: 30px;
+  background-color: #8b8b8d5f;
+  width: 20px; 
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 /* center */
 .cardImg{
   border-radius: 10px;
