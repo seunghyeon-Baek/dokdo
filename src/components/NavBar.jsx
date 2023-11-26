@@ -5,14 +5,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/style.css';
 
 function NavBar(){
+    // const [show, setShow] = useState(false);
+    // const handleShow = () => {  setShow(true);}
+    // const handleClose = () => { setShow(false);}
+
+    // const navHover = (isHobered) => {
+    //   if (isHovered) {
+    //     handleShow(); 
+    //   } else {
+    //     handleClose();
+    //   }
+    // };
     const [show, setShow] = useState(false);
-    const handleShow = () => {  setShow(true);}
-    const handleClose = () => { setShow(false);}
-
-    const navHover = () => {
-
+    const showDropdown = (e)=>{
+        setShow(!show);
     }
-    
+    const hideDropdown = e => {
+        setShow(false);
+    }
+
     return (
         <Navbar expand="lg" id="Navbar"  variant="dark">
           <Container>
@@ -23,7 +34,11 @@ function NavBar(){
             <Navbar.Toggle aria-controls="basic-navbar-nav" />  
             <Navbar.Collapse id="basic-navbar-nav">  {/* 햄버거버튼 */}
               <Nav className="me-auto">
-                <NavDropdown title="전시관 소개" id="basic-nav-dropdown">
+                <NavDropdown title="전시관 소개" id="basic-nav-dropdown"
+                 show={show}
+                 onMouseEnter={showDropdown} 
+                 onMouseLeave={hideDropdown}
+                >
                   <NavDropdown.Item href="#">인사말</NavDropdown.Item>
                   <NavDropdown.Item href="#">오시는길</NavDropdown.Item>
                 </NavDropdown>
