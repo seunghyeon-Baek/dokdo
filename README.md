@@ -1,4 +1,4 @@
 # 독도 전시관 페이지 
-Swiper, Bootstrap
+Swiper, Bootstrap 사용
 
-[screencapture-localhost-3001-2024-01-20-22_39_40.pdf](https://github.com/seunghyeon-Baek/fileupload/files/13998106/screencapture-localhost-3001-2024-01-20-22_39_40.pdf)
+![image](https://github.com/seunghyeon-Baek/fileupload/assets/150358806/d45122c4-6b65-49f0-9352-aa3d9bda92ab)
