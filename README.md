@@ -1,5 +1,4 @@
 # 독도 전시관 페이지 <br>
----
 ### ✏️Swiper, Bootstrap, FireBase 사용<br>
 
 
