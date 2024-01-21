@@ -1,5 +1,4 @@
 # 독도 전시관 페이지 <br>
-리액트 컴포넌트 연습 <br>
 ---
 ### ✏️Swiper, Bootstrap, FireBase 사용<br>
 
